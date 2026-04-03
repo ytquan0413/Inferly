@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inferly</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <aside class="brand-panel">
+        <p class="eyebrow">Inferly</p>
+        <h1>Learn to understand, not memorize.</h1>
+        <p class="brand-copy">
+          A guided reading app that teaches people to infer meaning from
+          context, transfer that understanding, and read with less dependence on
+          definitions.
+        </p>
+        <div class="brand-metrics">
+          <article>
+            <span>Reading flow</span>
+            <strong>Protected</strong>
+          </article>
+          <article>
+            <span>Reasoning style</span>
+            <strong>Context first</strong>
+          </article>
+          <article>
+            <span>Feedback</span>
+            <strong>Hints before answers</strong>
+          </article>
+        </div>
+      </aside>
+
+      <main class="app-stage">
+        <section class="device-frame">
+          <div class="status-bar">
+            <span>9:41</span>
+            <span>Inferly</span>
+            <span>100%</span>
+          </div>
+
+          <div class="app-content">
+            <header class="topbar">
+              <button class="ghost-button hidden" id="backButton" type="button">
+                Back
+              </button>
+              <div class="progress-group">
+                <div class="progress-label" id="progressLabel">Welcome</div>
+                <div class="progress-track">
+                  <div class="progress-fill" id="progressFill"></div>
+                </div>
+              </div>
+            </header>
+
+            <section id="screenContainer" aria-live="polite"></section>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
